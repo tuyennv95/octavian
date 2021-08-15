@@ -1,3 +1,43 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+
+input {
+  line-height: normal;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
 body {
   font-family: "Open sans", sans-serif;
   font-size: 16px;
@@ -11,6 +51,10 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.second-font {
+  font-family: "Raleway", sans-serif;
 }
 
 .header-main {
@@ -31,6 +75,37 @@ body {
 .header-phone span {
   font-weight: 600;
   margin-left: 15px;
+}
+
+.hero {
+  position: relative;
+  margin-bottom: 200px;
+}
+.hero-image {
+  margin-left: auto;
+}
+.hero-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.hero-caption {
+  font-size: 72px;
+  font-weight: 600;
+}
+.hero-heading {
+  font-size: 150px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.hero-link {
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #6a727f;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=app.css.map */
