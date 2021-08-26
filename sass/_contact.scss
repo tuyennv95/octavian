@@ -1,0 +1,80 @@
+.contact {
+  background: url(../images/contact-bg.png) no-repeat center / cover;
+  padding: 150px 0;
+
+  &-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  &-main {
+  }
+
+  &-heading {
+    max-width: 590px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 60px;
+    &_header {
+      color: white;
+      font-weight: 400;
+      // font-family: "Raleway", sans-serif;
+    }
+    &_des {
+      color: white;
+    }
+  }
+  &-input {
+    display: block;
+    margin-bottom: 30px;
+    padding: 15px 20px;
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid rgba(white, 0.5);
+    border-radius: 4px;
+    color: white;
+    transition: border 0.2s linear;
+    &::-webkit-input-placeholder {
+      color: white;
+    }
+    &::-moz-input-placeholder {
+      color: white;
+    }
+    &:focus {
+      border-color: white;
+    }
+  }
+  &-area{
+    display: block;
+    margin-bottom: 30px;
+    padding: 15px 20px;
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid rgba(white, 0.5);
+    border-radius: 4px;
+    color: white;
+    transition: border 0.2s linear;
+    height: 100px;
+    resize: none;
+    &::-webkit-input-placeholder {
+        color: white;
+      }
+      &::-moz-input-placeholder {
+        color: white;
+      }
+      &:focus {
+        border-color: white;
+      }
+  }
+  &-button{
+      background: linear-gradient(to right, #f475a0, #feac3d)
+  }
+  @include maxW(1023px){
+      padding:100px 0;
+  }
+  @include maxW(767px){
+      padding:60px 0;
+  }
+}

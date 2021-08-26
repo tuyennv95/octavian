@@ -1,4 +1,7 @@
 .header{
+    &-logo {
+        display: inline-block;
+      }
     &-main{
         display: flex;
         justify-content: space-between;
@@ -16,6 +19,20 @@
         span{
             font-weight: 600;
             margin-left: 15px;
+        }
+    }
+    @include maxW(1023px){
+        .header {
+            margin-bottom: 20px;
+          }
+        .header-phone{
+            display: none;
+        }
+        .navigation{
+            gap:0 25px;
+        }
+        .header-main{
+            padding: 20px 0;
         }
     }
 }
